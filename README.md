@@ -1,4 +1,4 @@
-# ME 701 -- Homework 1 -- Your Name Here
+# ME 701 -- Homework 1 -- Matthew Kirkendall
 
 ## Instructions
 
@@ -27,12 +27,10 @@ or Octave).
 
 ### Solution
 
-Write your solution here.  Note, in the past, we've used a full, graphical
-version of Linux.  With WSL, you probably don't have as direct a path for
-exploring software in the Software Manager.  However, use the power of
-Google (or AskJeeves) to explore what sorts of open-source software is out
-there for technical or other applications.
-
+One situation that I had to a prolem that was open sorce had to do with my 3d printer.
+I wanted to get a bed leveler and when I tried to get it to work I couldnt find a software that worked
+that didn't make me pay monthly. Then I found a open sorce verson of the software that someone edited to work with my
+exact leveler and I have used it ever since. 
 
 ## Problem 3 -- Your CPU
 
@@ -48,22 +46,18 @@ using `ls > directory_contents.txt` to dump the contents of a directory to a fil
 
 To display CPU information, I used the following command:
 
-```bash
-ls -al # <--- that's not right, but it shows you how to include
-       #      code in Markdown!
-```
+sysctl -n machdep.cpu.brand_string
+Intel(R) Core(TM) i5-5250U CPU @ 1.60GHz
 
 ## Problem 4 -- Resource Hogs
 
 ### Statement
 
-Figure out how to list the programs that use the most
-amount of (1) processing and (2) memory.  Describe your command(s)
-in your writeup.
-
+Figure out how to list the programs that use the most amount of (1) processing and (2) memory. 
+Describe your command(s) in your writeup.
 ### Solution
 
-
+I used the "top" command. It gives me all my info about cpu info and Memory info
 
 ## Problem 5 -- `bash`
 
@@ -74,3 +68,8 @@ Where is `bash` located on your Linux system?  And what version of
 determine this information.
 
 ### Solution
+
+Bash is located in home i got to it using 
+cd $Home
+I can find the Bash verson using the code
+bash --version echo $?
